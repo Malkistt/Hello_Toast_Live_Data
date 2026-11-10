@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berita"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/Subjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subjudul"
+        android:textSize="20dp"
+        android:layout_below="@+id/Judul"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Subjudul">
+
+        <TextView
+            android:id="@+id/konten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Subjudul"
+            android:text="@string/Konten"
+
+            />
+
+        </ScrollView>
+</RelativeLayout>
